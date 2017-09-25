@@ -14,11 +14,11 @@ public class ViewPanel extends JPanel {
 	double xmin, xmax, ymin, ymax;
 	double scale;
 	int margin;
-	public ViewBall ball;
+	public ViewBall ball1,ball2;
 
 	public ViewPanel(int width, int height, double xmin, double ymin, 
 			double xmax, double ymax, double scale, int margin,
-			ViewBall ball) {
+			ViewBall ball1, ViewBall ball2) {
 		setBounds(new Rectangle(0, width, 0, height));
 		this.xmin = xmin; // coordonnees du plan en metres
 		this.ymin = ymin;
@@ -26,12 +26,14 @@ public class ViewPanel extends JPanel {
 		this.ymax = ymax;
 		this.scale = scale;
 		this.margin = margin;
-		this.ball = ball;
+		this.ball1 = ball1;
+		this.ball2 = ball2;
 	}
 
 	public void paint(Graphics g){
 		super.paint(g);
-		ball.paint(g);;
+		ball1.paint(g);
+		ball2.paint(g);;
 		((Graphics2D)g).drawLine(
 				(int)(xmin * scale) + margin,
 				(int)(ymax * scale) + margin,

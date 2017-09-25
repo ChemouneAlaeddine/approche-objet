@@ -18,6 +18,38 @@ public class Panel {
 	 public static double XMAX = 10;
 	 public static double YMAX = 10;
 
+	 
+	 public int GetWIDTH(){
+		 return Panel.WIDTH;
+	 }
+	 
+	 public int GetHEIGHT(){
+		 return Panel.HEIGHT;
+	 }
+	 
+	 public int GetMARGIN(){
+		 return Panel.MARGIN;
+	 }
+	 
+	 public double GetSCALE(){
+		 return Panel.SCALE;
+	 }
+	
+	 public double XMIN(){
+		 return Panel.XMIN;
+	 }
+	 
+	 public double GetYMIN(){
+		 return Panel.YMIN;
+	 }
+	 
+	 public double GetXMAX(){
+		 return Panel.XMAX;
+	 }
+	 
+	 public double GetYMAX(){
+		 return Panel.YMAX;
+	 }
 	
 		
 }
