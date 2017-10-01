@@ -6,13 +6,11 @@ import javax.swing.Timer;
 
 public class AnimationTimer extends Timer {
 
-	// Quelques constantes
-	static int STEP = 15; // duree de rafraichissement de l'ecran: 15ms
+	static int STEP = 15;
 	public static double MSSTEP = STEP / 1000.0;
 
-	public AnimationTimer(ActionListener actionListener){
+	public AnimationTimer(ActionListener actionListener) {
 		super(STEP, actionListener);
-
 	}
 
 }
